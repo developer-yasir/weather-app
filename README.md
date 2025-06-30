@@ -18,9 +18,7 @@ A sleek and responsive weather dashboard built with **HTML**, **CSS**, and **Jav
 
 ## 🚀 Live Demo
 
-👉 **[Check Live App Here](https://your-username.github.io/weather-app/)**  
-*(Replace `developer-yasir` with your actual GitHub username)*
-
+👉 **[Check Live App Here](https://developer-yasir.github.io/weather-app/)**  
 ---
 
 ## 🛠️ Tech Stack
@@ -52,6 +50,6 @@ A sleek and responsive weather dashboard built with **HTML**, **CSS**, and **Jav
 ## 📦 Setup Instructions (Local Development)
 
 ```bash
-git clone https://github.com/your-username/next-level-weather-app.git
+git clone https://developer-yasir.github.io/weather-app/
 cd next-level-weather-app
 # Open index.html in browser
