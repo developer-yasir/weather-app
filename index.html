@@ -2,22 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather Pro</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>🌤️ Weather App</h1>
-    <input type="text" id="cityInput" placeholder="Enter city name" />
-    <button onclick="getWeather()">Check Weather</button>
+    <div class="top-bar">
+      <h1>🌤️ Weather Pro</h1>
+      <button onclick="toggleTheme()" class="theme-toggle">🌓</button>
+    </div>
 
-    <div id="weatherResult" class="weather-box hidden">
+    <div class="datetime" id="datetime"></div>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city..." />
+      <button onclick="getWeather()">🔍</button>
+      <button onclick="getLocationWeather()">📍</button>
+    </div>
+
+    <div class="quick-cities">
+      <button onclick="quickSearch('Lahore')">Lahore</button>
+      <button onclick="quickSearch('Karachi')">Karachi</button>
+      <button onclick="quickSearch('Dubai')">Dubai</button>
+      <button onclick="quickSearch('London')">London</button>
+    </div>
+
+    <div id="loader" class="loader hidden"></div>
+
+    <div id="weatherResult" class="weather-card hidden glass">
       <h2 id="cityName"></h2>
+      <img id="weatherIcon" src="" alt="Weather Icon" />
       <p id="temp"></p>
       <p id="condition"></p>
       <p id="humidity"></p>
       <p id="wind"></p>
+      <button onclick="getWeather()">🔄 Refresh</button>
     </div>
   </div>
 
